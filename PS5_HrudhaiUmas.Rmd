@@ -73,6 +73,10 @@ gm_data %>%
   head(1)
 ```
 
+- What we see happened here was that **Namibia's iso-2 code is NA**, which RStudios
+thought meant **NullValue** and that is why it got duplicated out with another
+country which had no name and no iso-2 code.
+
 - **(5pt) Now repeat the same for the name and iso3-code. Are there country**
 **names have more than one iso3-code? What are these countries?**
 ```{r}
@@ -89,6 +93,8 @@ gm_data %>%
   select(country)
 ```
 
+- The 4 countries as seen above all have an iso-3 name but no country name!
+Hence, that is why there exists more iso-3 than country names!
 
 **3. (2pt) What is the minimum and maximum year in these data?**
 
@@ -460,6 +466,3 @@ cat("Relative rank of US in 2019:", us_relative_rank_2019, "\n")
 **1. Finally tell us how many hours did you spend on this PS.**
 
 - I spent a total 11 hours on this PS!
-
-
-
